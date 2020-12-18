@@ -351,3 +351,4 @@ healthchecksdb
 *.db
 *.suo
 *.ipch
+*.zip
