@@ -4,11 +4,13 @@ using namespace System;
 using namespace System::Windows::Forms;
 
 ch::ch() {
+	Plnow = WHITE;
+	col = W;
 	FX = 0;
 	FY = 0;
 	SX = 0;
 	SY = 0;
-	col = W;
+	turn = 0;
 
 	desk = new short* [K];
 	for (short i = 0; i < K; i++) {

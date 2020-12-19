@@ -12,7 +12,7 @@ bool comparemas(const T* _mas1, const T* _mas2) {
 template<typename T1>
 inline T1 min(const T1*& _a, const T1*& _b)
 {
-	if (_a < _b) return _a;
+	if (_a > _b) return _a;
 	else return _b;
 }
 
@@ -51,7 +51,7 @@ T sum(const T* _mas)
 
 void minTest()
 {
-	assert(min(100,200) == 100, "min1");
+	assert(min(100,200) == 50, "min1");
 	assert(min("AAA","BBB") == "BBB", "min2");
 	assert(min(3.3,1.13) == 1.13, "min3");
 }
@@ -77,5 +77,5 @@ void sumTest()
 	int* nums = new int[N]{ 2,1,3 };
 	double* f = new double[N] { 2.2, -3.3, 1.1 };
 	assert(sum(nums) == 6, "sum1");
-	assert(sum(f) == 3.3, "sum2");
+	assert((sum(f) - 3.3)<0.0001, "sum2");
 }

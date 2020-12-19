@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include <corecrt_math.h>
 #define K 8 //Размер доски
 #define NONE 0 //Индекс пустой клетки
